@@ -168,7 +168,7 @@ lightning-cli fundchannel <node_id> <amount_in_satoshis>
 
 This opens a connection and, on top of that connection, then opens a channel.
 The funding transaction needs 3 confirmation in order for the channel to be usable, and 6 to be announced for others to use.
-You can check the status of the channel using `lightning-cli listpeers`, which after 3 confirmations (1 on testnet) should say that `state` is `CHANNELD_NORMAL`; after 6 confirmations you can use `lightning-cli listchannels` to verify that the `public` field is now `true`.
+You can check the status of the channel using `lightning-cli listpeers`, which after 3 confirmations (1 on testnet) should say that `state` is `CHANNELD_NORMAL`; after 6 confirmations you can use `lightning-cli listfunds` to verify that the `connected` field for your new channel is now `true`.
 
 ### Sending and Receiving Payments
 
